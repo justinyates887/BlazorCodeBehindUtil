@@ -1,0 +1,18 @@
+﻿<Window x:Class="BlazorCodeBehindUtil.BundleDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Blazor Bundle" Height="220" Width="300" 
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" ShowInTaskbar="False">
+    <StackPanel Margin="20">
+        <Label Content="Component Name:"/>
+        <TextBox x:Name="ComponentNameInput" Margin="0,0,0,10" />
+
+        <StackPanel Orientation="Horizontal">
+            <CheckBox x:Name="CheckCS" Content=".cs" Margin="0,0,10,0"/>
+            <CheckBox x:Name="CheckCSS" Content=".css" Margin="0,0,10,0"/>
+            <CheckBox x:Name="CheckJS" Content=".js" />
+        </StackPanel>
+
+        <Button Content="Create Bundle" Margin="0,20,0,0" Click="Create_Click" IsDefault="True"/>
+    </StackPanel>
+</Window>

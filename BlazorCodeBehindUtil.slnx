@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="arm64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="BlazorCodeBehindUtil.csproj" Id="16767e90-e859-4cba-9e08-689149855633">
+    <Platform Solution="*|arm64" Project="arm64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>
